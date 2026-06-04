@@ -1,0 +1,76 @@
+# Digital Certificates
+
+Digital certificates are used to verify the identity of websites and systems.
+
+They help users trust that they are communicating with the correct website.
+
+## Why Digital Certificates Are Needed
+
+Suppose a user visits:
+
+https://google.com
+
+Google sends its public key to the browser.
+
+The browser must verify that the public key actually belongs to Google and not an attacker.
+
+Digital certificates solve this problem.
+
+## What Is a Digital Certificate?
+
+A digital certificate is an electronic document that contains information about a website or organization.
+
+It acts like an online identity card.
+
+## Information in a Certificate
+
+A certificate may contain:
+
+- Website name
+- Public key
+- Issuing Certificate Authority (CA)
+- Expiration date
+
+## Certificate Authority (CA)
+
+A Certificate Authority is a trusted organization that issues digital certificates.
+
+Examples:
+
+- DigiCert
+- Let's Encrypt
+- Sectigo
+
+Browsers trust certificates issued by trusted CAs.
+
+## HTTPS and Certificates
+
+When a user visits a website:
+
+1. The website sends its public key and certificate.
+2. The browser verifies the certificate.
+3. If the certificate is trusted, the browser trusts the public key.
+4. HTTPS communication begins.
+
+## Invalid Certificates
+
+If a certificate is:
+
+- Expired
+- Invalid
+- Untrusted
+
+The browser may display warnings such as:
+
+"Your connection is not private"
+
+or
+
+"This site is not secure"
+
+## What I Learned
+
+- Digital certificates verify identity.
+- Certificates help browsers trust website public keys.
+- Certificate Authorities issue certificates.
+- HTTPS relies on certificates and encryption.

@@ -1,0 +1,152 @@
+# Symmetric vs Asymmetric Encryption
+
+Encryption is used to protect the confidentiality of data by converting readable information into an unreadable format.
+
+## Why Encryption is Needed
+
+When data travels across the Internet, attackers may intercept it.
+
+Encryption ensures that even if an attacker captures the data, they cannot read it without the correct key.
+
+---
+
+## Symmetric Encryption
+
+Symmetric encryption uses the same key for both encryption and decryption.
+
+### How it Works
+
+1. Sender and receiver share a secret key.
+2. The sender encrypts the message using the secret key.
+3. The receiver decrypts the message using the same key.
+
+### Example
+
+Secret Key:
+
+```text
+ABC123
+```
+
+Message:
+
+```text
+Hello
+```
+
+The message is encrypted using the key `ABC123` and can only be decrypted using the same key.
+
+### Advantages
+
+* Fast
+* Efficient for large amounts of data
+
+### Disadvantages
+
+* Key exchange problem
+* The secret key must be shared securely
+
+### Examples
+
+* AES
+* DES
+
+---
+
+## Asymmetric Encryption
+
+Asymmetric encryption uses two keys:
+
+* Public Key
+* Private Key
+
+### Public Key
+
+Can be shared openly with anyone.
+
+### Private Key
+
+Must remain secret and should never be shared.
+
+### How it Works
+
+Suppose Google owns:
+
+* Public Key
+* Private Key
+
+To send a secure message to Google:
+
+1. Use Google's Public Key to encrypt the message.
+2. Send the encrypted message.
+3. Google uses its Private Key to decrypt the message.
+
+### Advantages
+
+* Solves the key exchange problem
+* No need to share private keys
+
+### Disadvantages
+
+* Slower than symmetric encryption
+
+### Examples
+
+* RSA
+* ECC
+
+---
+
+## Symmetric vs Asymmetric Encryption
+
+| Symmetric Encryption        | Asymmetric Encryption        |
+| --------------------------- | ---------------------------- |
+| Uses one key                | Uses two keys                |
+| Faster                      | Slower                       |
+| Key must be shared          | Public key can be shared     |
+| Used for bulk data transfer | Used for secure key exchange |
+
+---
+
+## HTTPS and Encryption
+
+HTTPS uses both encryption methods.
+
+### Step 1
+
+The website sends its Public Key.
+
+### Step 2
+
+The browser generates a random session key.
+
+Example:
+
+```text
+ABC123
+```
+
+### Step 3
+
+The browser encrypts the session key using the website's Public Key.
+
+### Step 4
+
+The website decrypts the session key using its Private Key.
+
+### Step 5
+
+Both sides now know the session key and use Symmetric Encryption for the rest of the communication.
+
+This provides both security and speed.
+
+---
+
+## What I Learned
+
+* Encryption protects confidentiality.
+* Symmetric encryption uses one key.
+* Asymmetric encryption uses a public and private key.
+* Public keys can be shared safely.
+* Private keys must remain secret.
+* HTTPS uses asymmetric encryption for key exchange and symmetric encryption for communication.

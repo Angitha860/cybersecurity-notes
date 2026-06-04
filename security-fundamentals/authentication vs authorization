@@ -1,0 +1,55 @@
+# Authentication vs Authorization
+
+Authentication and Authorization are two important security concepts.
+
+## Authentication
+
+Authentication verifies the identity of a user.
+
+Question:
+
+Who are you?
+
+Examples:
+- Password
+- OTP
+- Fingerprint
+- Face ID
+- Smart Card
+
+Example:
+
+Logging into Gmail using a username and password.
+
+## Authorization
+
+Authorization determines what an authenticated user is allowed to do.
+
+Question:
+
+What are you allowed to do?
+
+Examples:
+- Read access
+- Write access
+- Delete access
+- Administrator privileges
+
+Example:
+
+An HR employee can access salary records, while a normal employee cannot.
+
+## Key Differences
+
+| Authentication | Authorization |
+|---------------|---------------|
+| Verifies identity | Verifies permissions |
+| Happens first | Happens after authentication |
+| Answers "Who are you?" | Answers "What can you do?" |
+
+## What I Learned
+
+- Authentication verifies identity.
+- Authorization verifies permissions.
+- Authorization cannot happen before authentication.
+- A user can pass authentication but fail authorization.

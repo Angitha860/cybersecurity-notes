@@ -1,0 +1,46 @@
+# Common Windows Event IDs
+
+## What is an Event ID?
+
+An Event ID is a unique numerical identifier assigned to a specific Windows event. Event IDs help administrators and security analysts quickly identify and investigate system activities.
+
+## Important Event IDs
+
+### Event ID 4624
+
+Successful Login
+
+This event is generated when a user successfully authenticates to a Windows system.
+
+### Event ID 4625
+
+Failed Login
+
+This event is generated when a login attempt fails.
+
+## Why Are These Important?
+
+SOC analysts frequently investigate successful and failed login events to identify:
+
+* Brute Force Attacks
+* Account Compromise
+* Suspicious Login Activity
+* Unauthorized Access Attempts
+
+## Example Investigation
+
+4625
+4625
+4625
+4624
+
+Possible explanations:
+
+* User entered an incorrect password multiple times.
+* Attacker successfully guessed the password.
+
+Further investigation is required before determining whether the activity is an incident.
+
+## Key Takeaway
+
+Event IDs allow security analysts to quickly identify and investigate specific activities occurring on Windows systems.

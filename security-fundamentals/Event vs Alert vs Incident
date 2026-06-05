@@ -1,0 +1,52 @@
+# Event vs Alert vs Incident
+
+## Event
+
+An event is any activity that occurs on a system.
+
+Examples:
+
+* User Login
+* File Access
+* Application Start
+* System Startup
+
+Not all events are malicious.
+
+## Alert
+
+An alert is generated when suspicious activity is detected.
+
+Examples:
+
+* Multiple Failed Logins
+* Login from Unusual Location
+* Malware Detection
+
+An alert requires investigation but does not automatically mean an attack has occurred.
+
+## Incident
+
+An incident is a confirmed security event that poses a threat to the organization.
+
+Examples:
+
+* Confirmed Account Compromise
+* Ransomware Infection
+* Data Exfiltration
+
+Incidents require response and remediation.
+
+## Workflow
+
+Event
+↓
+Alert
+↓
+Investigation
+↓
+Incident
+
+## Key Takeaway
+
+Every incident starts as an event, but not every event becomes an incident.

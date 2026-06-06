@@ -1,0 +1,23 @@
+# Active Directory Basics
+
+## What is Active Directory?
+
+Active Directory (AD) is a centralized directory service used to manage users, computers, groups, permissions, and policies within an organization.
+
+## Domain
+
+A domain is a collection of users and computers managed by Active Directory.
+
+Example:
+company.local
+
+## Domain Controller
+
+A Domain Controller (DC) is the server that stores and manages Active Directory information.
+
+## Benefits
+
+- Centralized user management
+- Centralized authentication
+- Easier permission management
+- Improved security

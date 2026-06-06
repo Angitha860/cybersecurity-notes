@@ -1,0 +1,84 @@
+# Common Attack Lifecycle
+
+## Overview
+
+Many cyber attacks follow a similar sequence of steps.
+
+Understanding this lifecycle helps SOC analysts identify attacker behavior and respond quickly.
+
+## Example Attack Chain
+
+Phishing Email
+↓
+Credential Theft
+↓
+Login
+↓
+MFA Disabled
+↓
+Persistence Established
+↓
+Privilege Escalation
+↓
+Lateral Movement
+↓
+Data Collection
+↓
+Data Exfiltration
+
+## Stages
+
+### Initial Access
+
+The attacker gains entry into the environment.
+
+Examples:
+
+* Phishing
+* Exploiting vulnerabilities
+
+### Persistence
+
+The attacker creates a method to maintain access.
+
+Examples:
+
+* Creating backup_admin
+* Creating backdoor accounts
+
+### Privilege Escalation
+
+The attacker gains higher permissions.
+
+Examples:
+
+* Adding accounts to Domain Admins
+
+### Lateral Movement
+
+The attacker moves between systems.
+
+Examples:
+
+* Accessing HR or Finance servers from a compromised Marketing account
+
+### Collection
+
+The attacker gathers valuable data.
+
+Examples:
+
+* Downloading employee records
+* Downloading financial documents
+
+### Exfiltration
+
+The attacker transfers data outside the organization.
+
+Examples:
+
+* Uploading files to external websites
+
+## Key Takeaway
+
+Most attacks are not a single event. They are a sequence of actions that SOC analysts must detect and investigate.

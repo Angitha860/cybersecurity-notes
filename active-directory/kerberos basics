@@ -1,0 +1,25 @@
+# Kerberos Basics
+
+## What is Kerberos?
+
+Kerberos is an authentication protocol used by Active Directory.
+
+## Purpose
+
+Allows users to authenticate once and use tickets to access resources without repeatedly sending passwords.
+
+## Benefits
+
+- Reduces password exposure
+- Supports Single Sign-On (SSO)
+- Improves authentication security
+
+## Key Concept
+
+User
+↓
+Authenticate
+↓
+Receive Ticket
+↓
+Access Resources Using Ticket

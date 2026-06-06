@@ -1,0 +1,29 @@
+# Privilege Escalation and Persistence
+
+## Privilege Escalation
+
+Privilege escalation occurs when a user or attacker gains higher permissions than originally assigned.
+
+Example:
+Marketing User -> Domain Admin
+
+Indicators:
+- User added to Domain Admins
+- Unexpected admin privileges
+
+## Persistence
+
+Persistence refers to techniques used by attackers to maintain access after initial compromise.
+
+Examples:
+- Creating new accounts
+- Creating backdoor accounts
+- Installing scheduled tasks
+
+Example Scenario:
+
+User Compromised
+↓
+Create backup_admin
+↓
+Maintain Access

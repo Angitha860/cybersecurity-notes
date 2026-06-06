@@ -1,0 +1,21 @@
+# Groups and Least Privilege
+
+## Groups
+
+Groups allow administrators to assign permissions to multiple users at once.
+
+Example:
+
+HR Group
+- Angitha
+- Rahul
+- Anu
+
+## Principle of Least Privilege
+
+Users should only receive the permissions required to perform their job.
+
+Benefits:
+- Reduced attack surface
+- Reduced impact of account compromise
+- Better security management
